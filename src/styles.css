@@ -23,10 +23,6 @@ input {
   font-weight: 500;
   opacity: 60%;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
 .condition-today {
   font-size: 42px;
   font-weight: 500;
