@@ -28,6 +28,15 @@ function showTemperature(response) {
   );
   document.querySelector("#condition-today").innerHTML =
     response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute(
+    "alt",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
+  );
 }
 function search(city) {
   let apiKey = "d623ebf54f63b0240f122eda2edf85ff";

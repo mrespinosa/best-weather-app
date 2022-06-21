@@ -35,6 +35,8 @@ p {
 .condition-today {
   font-weight: 500;
   line-height: 1;
+}
+.condition-today::first-letter {
   text-transform: capitalize;
 }
 
