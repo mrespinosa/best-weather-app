@@ -15,60 +15,69 @@
     <title>Miriam's Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <form id="enter-city">
-            <div class="row">
-              <div class="col">
-                <input
-                  id="search-input"
-                  class="enter-city"
-                  type="text"
-                  placeholder="Enter a City"
-                  autofocus="on"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="col">
-                <button type="submit" class="btn btn-primary">Search</button>
-              </div>
-              <div class="col">
-                <button class="btn btn-success" id="current-location-button">
-                  Current
-                </button>
-              </div>
+    <div class="wrapper">
+      <div class="container">
+        <form id="enter-city">
+          <div class="row">
+            <div class="col-6">
+              <input
+                id="search-input"
+                class="enter-city"
+                type="text"
+                placeholder="Enter a City"
+                autofocus="on"
+                autocomplete="off"
+              />
             </div>
-          </form>
-          <div class="row text-center info-today">
-            <div class="col">
-              <h1 id="city-entered">New York</h1>
-              <h2 id="date-today">Saturday 6:10pm</h2>
-              <div class="row">
-                <div class="col">
-                  <h6>
-                    Humidity: <span id="city-humidity"> 87% </span>
-                    <br />
-                    Wind: <span id="city-wind">12</span>km/h
-                  </h6>
-                </div>
-              </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-primary" w-100>
+                Search
+              </button>
             </div>
-            <div class="col">
-              <p class="condition-today">
-                <span id="condition-today">Rain</span>
-                <br />
-                <span id="temperature-today">47</span><span id="units">°F</span>
-              </p>
+            <div class="col-3">
+              <button
+                class="btn btn-success"
+                id="current-location-button"
+                w-100
+              >
+                Current
+              </button>
             </div>
           </div>
+        </form>
+        <div class="row text-center info-today">
+          <div class="col">
+            <h1 id="city-entered">New York</h1>
+            <h2 id="date-today">Saturday 6:10pm</h2>
+          </div>
+          <div class="col">
+            <h1 class="condition-today">
+              <span id="condition-today">Rain</span>
+              <br />
+              <h6>
+                Humidity: <span id="city-humidity"> 87% </span>
+                <br />
+                Wind: <span id="city-wind">12</span>km/h
+              </h6>
+            </h1>
+          </div>
+          <p>
+            <img
+              src="https://th.bing.com/th/id/OIP.XGmgrbT5azBKafK4p_M-VwHaHa?pid=ImgDet&rs=1"
+              alt="Clouds"
+            />
+
+            <span id="temperature-today">47</span><span id="units">°F|°C </span>
+          </p>
+          <script src="src/index.js"></script>
         </div>
       </div>
-      <script src="src/index.js"></script>
+      <a
+        href="http://https://github.com/mrespinosa/best-weather-app"
+        target="_blank"
+        >Open-source code</a
+      >
+      by Miriam Espinosa
     </div>
-    <a href="http://https://github.com/mrespinosa/best-weather-app"
-      >Open-source code</a
-    >
-    by Miriam Espinosa
   </body>
 </html>

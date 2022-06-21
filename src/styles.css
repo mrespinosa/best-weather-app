@@ -1,49 +1,68 @@
 h2 {
   opacity: 80%;
-  font-weight: lighter;
+  font-weight: 400;
+  font-size: 25px;
+  opacity: 50%;
 }
 
 h6 {
   opacity: 50%;
 }
 
-h5 {
-  font-size: 25px;
-}
 form {
   margin: 0 auto;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  margin-top: 25px;
   font-size: 30px;
 }
 input {
   font-style: italic;
   font-size: 30px;
-  width: 270px;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 60%;
+  border: 1px solid #6e91bf;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  margin-top: -25px;
+}
+p {
+  text-align: center;
+  padding-top: 12px;
 }
 .condition-today {
-  font-size: 42px;
   font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
 }
-.five-days {
-  font-size: 25px;
-  margin-top: 40px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.info-today {
-  padding-left: 40px;
-  padding-right: 40px;
-  letter-spacing: 2px;
-}
+
 #units {
   position: relative;
-  top: -16px;
+  top: -25px;
   font-weight: 300;
   font-size: 18px;
 }
 .container {
   max-width: 700px;
+  border: 1px solid #6e91bf;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#temperature-today {
+  font-size: 55px;
+  font-weight: 400;
+}
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#current-location-button {
+  background: #6e91bf;
+  padding: 12px;
+}
+.btn-primary {
+  padding: 12px;
 }
