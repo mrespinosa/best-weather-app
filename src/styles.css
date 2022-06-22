@@ -32,6 +32,9 @@ p {
   text-align: center;
   padding-top: 12px;
 }
+a {
+  text-decoration: none;
+}
 .condition-today {
   font-weight: 500;
   line-height: 1;
@@ -67,4 +70,11 @@ p {
 }
 .btn-primary {
   padding: 12px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active :hover {
+  text-decoration: none;
 }
