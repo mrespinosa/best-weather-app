@@ -78,3 +78,9 @@ a {
 .active :hover {
   text-decoration: none;
 }
+.weather-forecast-icon {
+  margin-top: 2px;
+}
+.weather-forecast-min-temp {
+  opacity: 0.5;
+}
