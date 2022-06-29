@@ -111,36 +111,11 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
-function showCelsiusTemperature(event) {
-  event.preventDefault();
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature-today");
-  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-function showFahrenheitTemperature(event) {
-  event.preventDefault();
-  fahrenheitLink.classList.add("active");
-  celsiusLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature-today");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
 let city = document.querySelector("#enter-city");
 city.addEventListener("submit", requestCityTemp);
 
 let locationButton = document.querySelector("#current-location-button");
 locationButton.addEventListener("click", getCurrentLocation);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsiusTemperature);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
-
-let fahrenheitTemperature = null;
 
 search("New York");
 
